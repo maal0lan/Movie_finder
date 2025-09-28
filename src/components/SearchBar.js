@@ -11,7 +11,7 @@ function SearchBar({ onSearch }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-2 mb-6 justify-center">
+    <form onSubmit={handleSubmit} className="flex gap-2 mb-6 justify-left">
       <input
         type="text"
         value={query}
@@ -21,7 +21,7 @@ function SearchBar({ onSearch }) {
       />
       <button
         type="submit"
-        className="bg-yellow-500 text-black font-semibold px-4 rounded"
+        className="bg-white hover:bg-gray-400   text-black font-semibold px-4 rounded"
       >
         Search
       </button>

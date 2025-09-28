@@ -4,7 +4,7 @@ function MovieCard({ movie, onSelectMovie }) {
   return (
     <div
       onClick={() => onSelectMovie(movie.imdbID)}
-      className="bg-gray-700 p-3 rounded shadow cursor-pointer hover:bg-gray-600"
+      className="bg-gray-700 p-3 rounded shadow cursor-pointer hover:bg-slate-800 display-flex items-center flex-col"
     >
       <img
         src={movie.Poster !== "N/A" ? movie.Poster : "https://via.placeholder.com/150"}
